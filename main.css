@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+	overflow: none;
+	padding:0px;
+	margin:0px;
+	font-family: "Roboto";
+	background-color: rgb(255,255,255);
+}
+div{
+	display:inline-block; /*aligns stuff */
+	margin-right: -4px; /* always has to be used with inline-block */
+	vertical-align: middle; /* this could be top, bottom or middle, and relates to how aligned things are*/
+}
+
+div#top-left {
+	width: 50%;
+	min-height: 60%;
+	background-image: url('image.jpg');
+	background-position: center;
+	background-size: cover; /* makes sure the image covers the background" */ 
+	background-repeat: no-repeat;
+}
+
+div#top-right {
+	width: 50%;
+	min-height: 60%;
+	padding: 5% 8% ; /* Padding is the interior margin */
+	color: rgb(203,45,96);
+}
+
+div#bottom {
+	width: 100%;
+	min-height: 40%;
+	color: rgb(220,222,224);
+	background-color: rgb(48,48,48);
+	padding: 2% 20%;
+}
+
+div#bottom-left {
+	width: 50%;
+	vertical-align: top;
+}
+
+div#bottom-right {
+	width: 30%;
+	margin-left: 20%;
+	vertical-align: top;
+}
+
+h1 {
+	font-size: 45pt;
+	font-weight: bold; /* bold can be replaced by 700 */
+	margin-bottom: 20px; /* or we could say margin TLBR (top-left-bottom-right) and write all of them out */
+}
+
+h2 {
+	font-size: 35pt;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 22pt;
+	font-weight: lighter;
+	line-height: 1.4; /* spacing */ 
+	margin: 0;
+}
+
+a {
+	text-decoration: none; /*underlines, streakthrough */
+	font-weight: bold;
+	color: rgb(92,23,59);
+}
